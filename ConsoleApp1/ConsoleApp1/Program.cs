@@ -1,16 +1,18 @@
-﻿
-int myAge = 12;
-Console.WriteLine(int.MaxValue);
-Console.WriteLine(myAge-12);
-uint qpa = 1998;
-Console.WriteLine("qpa = "+qpa); ;
-double zmiennoprzecinek = qpa / 13;
-Console.WriteLine(zmiennoprzecinek);
-string text1 = "Przemuś";
-string text2 = "Napieralski";
-string text3 = " ";
-Console.WriteLine(text1+text3+text2);
-char letter = 'Q';
-Console.WriteLine(letter);
-char letter2 = text1.ToArray()[1];
-Console.WriteLine(letter2);
+﻿int number = 4519566;
+string numberToString = number.ToString();
+char[] letters = numberToString.ToArray();
+// int[] numbers = new int[] { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+
+int[] numbers = new int[10]; 
+
+foreach (char letter in letters)
+{
+    numbers[int.Parse(letter.ToString())] = numbers[int.Parse(letter.ToString())] + 1;
+}
+
+Console.WriteLine(number+":");
+Console.WriteLine("");
+for (int index = 0; index < numbers.Length; index++)
+{
+    Console.WriteLine(index + " => " + numbers[index]);
+}
