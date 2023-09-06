@@ -42,5 +42,5 @@ foreach (Employee employee in employees)
         theBestEmployee = employee;
     }
 }
-Console.WriteLine("...czyli najlepszy jest:\n" + theBestEmployee.Name + " " + theBestEmployee.Surname + " z wynikiem: " + theBestEmployee.Result);
+Console.WriteLine("...czyli najlepszy jest:\n" + theBestEmployee.Name + " " + theBestEmployee.Surname + " lat " + theBestEmployee.Age + " z wynikiem: " + theBestEmployee.Result);
 
