@@ -24,7 +24,8 @@
 
         public void AddScore(int points)
         {
-            this.score.Add(points);
+            this.score.Add(points);            
         }
     }
 }
+

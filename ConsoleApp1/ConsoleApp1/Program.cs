@@ -12,7 +12,7 @@ employee1.AddScore(2);
 
 employee2.AddScore(18);
 employee2.AddScore(1);
-employee2.AddScore(9);
+employee2.AddScore(39);
 employee2.AddScore(26);
 employee2.AddScore(13);
 
@@ -42,5 +42,5 @@ foreach (Employee employee in employees)
         theBestEmployee = employee;
     }
 }
-Console.WriteLine("...czyli najlepszy jest:\n" + theBestEmployee.Name + " " + theBestEmployee.Surname + " lat " + theBestEmployee.Age + " z wynikiem: " + theBestEmployee.Result);
+Console.WriteLine("\n...czyli najlepszy jest:\n" + theBestEmployee.Name + " " + theBestEmployee.Surname + " lat " + theBestEmployee.Age + " z wynikiem: " + theBestEmployee.Result);
 
